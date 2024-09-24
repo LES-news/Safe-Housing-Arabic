@@ -1,4 +1,4 @@
-/* إعادة تعيين التنسيقات */
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,17 +8,14 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    direction: rtl; /* اتجاة النص من اليمين إلى اليسار */
+    line-height: 1.6; /* Improve text spacing */
 }
 
-/* تنسيق شريط التنقل */
+/* Navigation Bar Styling */
 .navbar {
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Green background */
     color: white;
-    padding: 15px 20px;
+    padding: 15px 20px; /* Add padding for better visibility */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,30 +49,51 @@ body {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 1.1em;
+    font-size: 1.1em; /* Increase font size for better visibility */
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
 
-/* تنسيق المحتوى الرئيسي */
+/* Main Content Styling */
 section {
-    padding: 20px 40px;
+    padding: 20px 40px; /* Increase padding for better spacing */
     background-color: white;
-    margin: 20px auto;
-    max-width: 800px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    margin: 20px auto; /* Add margin for separation */
+    max-width: 800px; /* Limit the width of the content */
+    border: 1px solid #ddd; /* Add border for distinction */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 8px; /* Rounded corners */
 }
 
 h2 {
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Add spacing below the heading */
 }
 
-/* تنسيق التذييل */
+h1 {
+    color: #4CAF50; /* Use green color for headings */
+    margin-top: 20px;
+}
+
+/* Link Styling */
+.translation-link {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.resource-links {
+    margin: 15px 0;
+}
+
+.resource-links a {
+    display: block;
+    margin-bottom: 10px; /* Space between links */
+    color: #4CAF50; /* Link color */
+}
+
+/* Footer Styling */
 footer {
     background-color: #333;
     color: white;
@@ -84,5 +102,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
